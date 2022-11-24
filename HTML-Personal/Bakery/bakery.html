@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Bakery
+        </title>
+    </head>
+    <body>
+        <h1>Bakery</h1>
+        <form>
+            <input type = "number" id = 'bread'>
+            <input type="submit">
+        </form>
+
+        <button onclick="popup('bread')"><img src = "bread.jpeg"></button>
+        <p>Current quantity ordered : <span id = 'bread'>0</span></p>
+
+        <p><button onclick="totalamt()">Generate Bill</button></p>
+
+        <table>
+            <tr>
+            <th>Item Name</th>
+            <th>Quantity ordered</th>
+            <th>Price per pc</th>
+            <th>Total</th>
+            </tr>
+
+            <tr>
+                <td>Bread</td>
+                <td><span id = 'breadbill'>0</span></td>
+                <td><span id = 'bread1'>10</span></td>
+                <td id = 'breadtotal'>0</td>
+            </tr> 
+            <tr>
+                <td colspan="3">Total Amount</td>
+                <td><span id = "TotalBill">0</span></td>
+            </tr>
+        </table>
+        <script lang="JavaScript">
+            a = 0
+            function popup(id)
+            {
+                a = prompt("Enter Quantity")
+                document.getElementById(id).innerHTML=a;
+                bill(id)
+            }
+            function bill(id)
+            {
+                document.getElementById(id+'bill').innerHTML = a;
+                val1 =10
+                res = a*val1
+                document.getElementById(id+'total') = res;
+            }
+            function totalamt()
+            {
+                sum = 0
+                var table = document.getElementById('table');
+                var n = table.rows.length;
+                for(let i = 1; i<n-1;i++)
+                {
+                    sum+=parseInt(table.rows[i].cells[3].innerHTML)
+                }
+                document.getElementById('TotalBill').innerHTML = sum;
+
+            }
+
+        </script>
+
+
+    </body>
+</html>
