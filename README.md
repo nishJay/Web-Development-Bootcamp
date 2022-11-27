@@ -1,3 +1,3 @@
 # Web-Development-Bootcamp
 
-[Profile Site in HTML](file:///C:/Users/Jayanth%20Jadhav/Firstnishjay/Web-Development-Bootcamp/HTML-Personal%20Site/index.html)
+[Profile Site in HTML](https://htmlpreview.github.io/?https://github.com/nishJay/Web-Development-Bootcamp/blob/main/HTML-Personal/index.html)
