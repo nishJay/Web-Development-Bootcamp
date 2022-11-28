@@ -1,0 +1,16 @@
+body
+    { 
+            background-color: #F6FFA4;
+
+    }
+
+hr 
+    {
+            
+            border-style: dotted none none;
+            border-color: gray;
+            height: 50px;
+            width: 5%;
+            
+    }
+
