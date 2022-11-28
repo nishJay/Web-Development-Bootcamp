@@ -20,7 +20,7 @@ hr
             
             border-style: dotted none none;
             border-color: gray;
-            height: 500px;
+            border-width: 5px;
             width: 5%;
             
     }
